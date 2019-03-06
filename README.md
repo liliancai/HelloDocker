@@ -1,4 +1,5 @@
 Docker get started project.
+
 Followed https://docs.docker.com/get-started/part2/
 
 sudo docker run -d -p 4000:80 liliancai/get-started:part2
@@ -13,6 +14,7 @@ server{
         }
 }
 Also disable the default pagea:#not recommand way
+
 #include /etc/nginx/sites-enabled/*;
 
 sudo systemctl restart nginx
