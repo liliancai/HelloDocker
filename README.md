@@ -39,5 +39,8 @@ docker build --tag=helloflask . & docker rmi --force helloflask:latest
 ### To push a builded image
 i.g.
 ```
-docker ps & docker commit f85f85be0898ecf & docker run -p 80:5000 liliancai/helloflask:v1 & docker push liliancai/helloflask:v1 
+docker ps & docker commit f85f85be0898ecf & docker tag helloflask liliancai/helloflask:v2 & docker push liliancai/helloflask:v2 
+
+
+& docker run -p 80:5000 liliancai/helloflask:v2
 ```
