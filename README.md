@@ -26,13 +26,17 @@ sudo systemctl restart nginx
 ```
 Then http://i.p.v.4 suposed to see what shows on http://0.0.0.0:4000
 
----------------------------------------
+----------------------------------------------------------------------
 ### To stop container running as daemon
 ```
 docker ps & docker stop <container ID>
 ```
 ### To build a image and remove it
-```docker build --tag=helloflask . & docker rmi --force helloflask:latest```
+```
+docker build --tag=helloflask . & docker rmi --force helloflask:latest
+```
 
 ### To push a builded image
-i.g.``` docker ps & docker commit f85f85be0898ecf & docker run -p 80:5000 liliancai/helloflask:v1 & docker push liliancai/helloflask:v1 ```
+i.g.```
+docker ps & docker commit f85f85be0898ecf & docker run -p 80:5000 liliancai/helloflask:v1 & docker push liliancai/helloflask:v1 
+```
