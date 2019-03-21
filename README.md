@@ -38,7 +38,7 @@ docker build --tag=helloflask . & docker rmi --force helloflask:latest
 
 ### To push a builded image
 
-run the image as daemon -d before commit
+run the image as daemon -d before commit, docker tag is not necessary
 
 i.g.
 ```
